@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(60, 60, 60);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Inconsolata", monospace;
+}
+
+.heading {
+  color: aqua;
+  text-shadow: 2px 2px 20px aqua;
+  letter-spacing: 2px;
+}
+
+.container {
+  background: white;
+  min-width: 30vw;
+  max-width: 80vw;
+  height: 70vh;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.219);
+}
+.container .greet {
+  font-size: 25px;
+}
+.container .greet input {
+  border: none;
+  outline: none;
+  font-size: 23px;
+  font-weight: 400;
+}
+.container form {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.container form .double {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+.container form .double .form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0 30px;
+}
+.container form .double .form-field input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.container form .double button {
+  background: red;
+  padding: 10px 40px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow, scale 0.4s;
+}
+.container form .double button:hover {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.397);
+  transition: all 0.4s;
+  scale: 0.96;
+}
+.container form .double .form-check-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.container #list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 30px;
+  overflow: auto;
+  padding: 10px;
+  height: 100%;
+}
+.container #list .expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.container #list .expense .price {
+  color: red;
+}
+.container #list .expense .btns img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.container #list .paid {
+  opacity: 0.7;
+}
+.container #list .paid .name {
+  text-decoration: line-through;
+}
+.container #list .paid .price {
+  color: green;
+}
+.container .sum {
+  background-color: rgba(9, 9, 122, 0.897);
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.container .sum #sum-info {
+  color: yellow;
+}
+.container select {
+  width: 30%;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 4px;
+}/*# sourceMappingURL=style.css.map */

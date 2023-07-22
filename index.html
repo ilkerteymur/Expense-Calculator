@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="IMG/card.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="heading">Harcama Hesaplayıcı</h1>
+
+    <div class="container">
+      <!-- greeting -->
+      <h3 class="greet">
+        Hoşgeldin,
+        <input id="user-input" type="text" placeholder="isiminizi giriniz..." />
+      </h3>
+      <!-- form section -->
+      <form>
+        <!-- Form Head -->
+        <div class="double">
+          <div class="form-field">
+            <label for="name-input">Harcama:</label>
+            <input id="name-input" type="text" />
+          </div>
+          <div class="form-field">
+            <label for="price-input">Fiyat:</label>
+            <input id="price-input" type="number" />
+          </div>
+        </div>
+        <!-- Form Bottom -->
+        <div class="double">
+          <div class="form-check-field">
+            <input id="status-check" type="checkbox" />
+            <label for="status-check">Ödendi</label>
+          </div>
+          <button id="add-btn">Ekle</button>
+        </div>
+      </form>
+
+      <!-- toplam alanı start -->
+
+      <div class="sum">
+        Toplam Harcama <span id="sum-info">0</span> &#x20BA;
+      </div>
+
+      <!-- toplam alanı end -->
+      <!-- filtreleme alanı start -->
+      <select>
+        <option value="all">Hepsi</option>
+        <option value="paid">Ödenenler</option>
+        <option value="not-paid">Ödenmeyenler</option>
+      </select>
+      <!-- filtreleme alanı end -->
+      <!-- expense lists -->
+      <div id="list"></div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <!-- toastify notification library js  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>
